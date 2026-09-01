@@ -49,7 +49,7 @@ flowchart LR
 **Lo que he trabajado:**
 
 | Componente | Qué hace |
-|---|---|---|
+|---|---|
 | `cococash-wallet-ms` | Cuentas, transferencias y depósitos sobre PostgreSQL  |
 | `cococash-transaction-ms` | Consume eventos y construye el libro mayor en DynamoDB |
 | `cococash-pdf-maker` | Genera el extracto en PDF y lo sube a S3  |
