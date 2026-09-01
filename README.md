@@ -29,9 +29,9 @@ flowchart LR
     U([Usuario]) --> AG[API Gateway]
     AG --> W["cococash-wallet-ms<br/>TypeScript · Express"]
     AG --> L["link-generator<br/>Go · Lambda"]
-    W <--> R[(PostgreSQL<br/>RDS)]
-    W -- "transfer.initiated<br/>deposit.completed" --> SNS((SNS))
-    SNS --> SQS[/SQS/]
+    W <--> R[("PostgreSQL<br/>RDS")]
+    W -->|"transfer.initiated<br/>deposit.completed"| SNS((SNS))
+    SNS --> SQS[SQS]
     SQS --> T["cococash-transaction-ms<br/>Go"]
     T <--> D[(DynamoDB)]
     EB[EventBridge] --> GA["get-accounts<br/>Go · Lambda"]
@@ -121,13 +121,13 @@ y Kubernetes.
 
 ```mermaid
 flowchart TB
-    U([Usuario]) --> RP[recipy-rp<br/>proxy inverso]
+    U([Usuario]) --> RP["recipy-rp<br/>proxy inverso"]
     RP --> F["recipy-frontend<br/>Next.js"]
     F --> AG["recipy-ag<br/>API Gateway · NestJS"]
-    AG -- GraphQL --> RMS["recipe-ms<br/>FastAPI · GraphQL"]
+    AG -->|GraphQL| RMS["recipe-ms<br/>FastAPI · GraphQL"]
     AG --> UMS[userauth-ms]
     AG --> IMS[image-ms]
-    AG --> MB[mail-broker<br/>RabbitMQ]
+    AG --> MB["mail-broker<br/>RabbitMQ"]
     RMS --> CACHE["recipy-cache<br/>FastAPI · Redis"]
     RMS --> MDB[(MongoDB)]
     UMS --> PG[(PostgreSQL)]
