@@ -8,14 +8,11 @@ mensajería asíncrona, bases de datos e infraestructura como código.
 
 ## Dónde está mi código
 
-La mayor parte de lo que he construido vive en organizaciones de equipo, no en este
-perfil. Ahí están los proyectos reales:
-
 - **[recipy-swarch](https://github.com/recipy-swarch)** — plataforma web de recetas en microservicios
 - **[TeamC-swarchqua](https://github.com/TeamC-swarchqua)** — billetera digital en AWS y trabajo de calidad de software
 
 Los dos primeros proyectos que siguen son de curso, desarrollados en equipos de siete
-personas. Describo solo la parte que escribí yo.
+personas.
 
 ## Proyectos
 
