@@ -8,7 +8,7 @@ que no se ve: la cola que no pierde mensajes, la transacción que no se corrompe
 dos usuarios tocan la misma cuenta al mismo tiempo, el `terraform apply` que levanta
 todo desde cero.
 
-> **Este perfil se ve vacío a propósito.** Mi código vive en las organizaciones de los
+> ** Mi código vive en las organizaciones de los
 > equipos con los que trabajo:
 >
 > 🍳 **[recipy-swarch](https://github.com/recipy-swarch)** · 🥥 **[TeamC-swarchqua](https://github.com/TeamC-swarchqua)**
@@ -46,16 +46,16 @@ flowchart LR
     class AG,EB equipo
 ```
 
-**Lo que escribí, con números de `git blame`:**
+**Lo que he trabajado:**
 
 | Componente | Qué hace | Mío |
 |---|---|---|
-| `cococash-wallet-ms` | Cuentas, transferencias y depósitos sobre PostgreSQL | 2174 / 2194 líneas |
-| `cococash-transaction-ms` | Consume eventos y construye el libro mayor en DynamoDB | 1435 / 1435 |
-| `cococash-pdf-maker` | Genera el extracto en PDF y lo sube a S3 | 593 / 593 |
-| `cococash-get-accounts` | Dispara la generación mensual desde EventBridge | 389 / 389 |
-| `cococash-link-generator` | Devuelve una URL prefirmada de S3 para descargar el extracto | 339 / 339 |
-| Terraform de red, ECS y API Gateway | VPC, ALB, Fargate, IAM | parcial |
+| `cococash-wallet-ms` | Cuentas, transferencias y depósitos sobre PostgreSQL  |
+| `cococash-transaction-ms` | Consume eventos y construye el libro mayor en DynamoDB |
+| `cococash-pdf-maker` | Genera el extracto en PDF y lo sube a S3  |
+| `cococash-get-accounts` | Dispara la generación mensual desde EventBridge  |
+| `cococash-link-generator` | Devuelve una URL prefirmada de S3 para descargar el extracto  |
+| Terraform de red, ECS y API Gateway | VPC, ALB, Fargate, IAM  |
 
 También el middleware de autenticación con **Cognito** (JWT + JITP) y el endpoint de
 depósito con bloqueo a nivel de fila.
@@ -143,8 +143,7 @@ flowchart TB
 
 <sub>🟩 escrito por mí · 🟨 aportes puntuales · ⬜ del resto del equipo</sub>
 
-Fui responsable del **microservicio de recetas** (`recipe-ms`, **1080 de 1205 líneas de
-Python**): API en FastAPI con GraphQL sobre MongoDB, validación de JWT, y los endpoints
+Fui responsable del **microservicio de recetas** (`recipe-ms`): API en FastAPI con GraphQL sobre MongoDB, validación de JWT, y los endpoints
 de recetas, comentarios y likes. Escribí también el **servicio de caché** sobre Redis
 (`recipy-cache`, 82 de 82 líneas) y lo integré con `recipe-ms`.
 
@@ -157,9 +156,9 @@ gateway en NestJS, el `docker-compose` y los scripts de inicialización de Mongo
 
 ## 🔧 Proyectos más chicos
 
-**[devops-reto-automatizacion-entorno](https://github.com/GorenNM/devops-reto-automatizacion-entorno)** — repo propio, 13 de 13 commits míos. Una app Node.js contenerizada, un módulo de Terraform que construye y publica la imagen, y un script de gestión del entorno Docker. Infraestructura como código escrita de punta a punta por mí. · `Terraform` `Docker` `Node.js` `Bash`
+**[devops-reto-automatizacion-entorno](https://github.com/GorenNM/devops-reto-automatizacion-entorno)** — repo propio. Una app Node.js contenerizada, un módulo de Terraform que construye y publica la imagen, y un script de gestión del entorno Docker. Infraestructura como código escrita de punta a punta por mí. · `Terraform` `Docker` `Node.js` `Bash`
 
-**[gopdfsuit-qua](https://github.com/TeamC-swarchqua/gopdfsuit-qua)** — ⚠️ **es un fork** de [GoPdfSuit](https://github.com/chinmay-sawant/gopdfsuit) (MIT); el generador de PDF **no es mío**. Lo usamos como base para un trabajo de calidad de software. Mi aporte encima: la suite de pruebas de integración y end-to-end (Playwright en el frontend, pruebas en Go en el backend), el reemplazo de Google OAuth por un servicio de autenticación propio en el middleware, y el análisis de seguridad y mantenibilidad — ZAP, Trivy, gosec, golangci-lint y modelo de amenazas. · `Go` `Playwright` `Vitest` `SAST/DAST`
+**[gopdfsuit-qua](https://github.com/TeamC-swarchqua/gopdfsuit-qua)** — ⚠️ **es un fork** de [GoPdfSuit](https://github.com/chinmay-sawant/gopdfsuit) (MIT); Mi aporte encima: la suite de pruebas de integración y end-to-end (Playwright en el frontend, pruebas en Go en el backend), el reemplazo de Google OAuth por un servicio de autenticación propio en el middleware, y el análisis de seguridad y mantenibilidad — ZAP, Trivy, gosec, golangci-lint y modelo de amenazas. · `Go` `Playwright` `Vitest` `SAST/DAST`
 
 ---
 
