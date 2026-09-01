@@ -1,6 +1,6 @@
-# Hola, soy Fabio 👋
+# Hola, soy Fabio 
 
-Estudiante de último año de **Ingeniería de Sistemas y Computación** en la Universidad
+Estudiante de **Ingeniería de Sistemas y Computación** en la Universidad
 Nacional de Colombia, e ingeniero de datos y nube.
 
 Construyo backend distribuido, pipelines de datos y plataformas web. Me gusta la parte
@@ -11,14 +11,11 @@ todo desde cero.
 > Mi código vive en las organizaciones de los
 > equipos con los que trabajo:
 >
-> 🍳 **[recipy-swarch](https://github.com/recipy-swarch)** · 🥥 **[TeamC-swarchqua](https://github.com/TeamC-swarchqua)**
-
-Los dos proyectos grandes son de curso, hechos en equipos de siete personas. En los
-diagramas marqué **en verde lo que escribí yo**.
+>  **[recipy-swarch](https://github.com/recipy-swarch)** ·  **[TeamC-swarchqua](https://github.com/TeamC-swarchqua)**
 
 ---
 
-## 🥥 [CocoCash](https://github.com/TeamC-swarchqua/cococash) — billetera digital en AWS
+##  [CocoCash](https://github.com/TeamC-swarchqua/cococash) — billetera digital en AWS
 
 Transferencias entre cuentas y generación de extractos bancarios, con arquitectura
 orientada a eventos. El repositorio tiene el código de los servicios **y** la
@@ -114,7 +111,7 @@ intentos cae en una DLQ en vez de perderse.
 
 ---
 
-## 🍳 [Recipy](https://github.com/recipy-swarch/recipy) — red social de recetas en microservicios
+##  [Recipy](https://github.com/recipy-swarch/recipy) — red social de recetas en microservicios
 
 Dieciocho servicios, cuatro bases de datos, proxy inverso, y despliegue en Docker Compose
 y Kubernetes.
@@ -141,8 +138,6 @@ flowchart TB
     class RP,UMS,IMS,MB,MMS equipo
 ```
 
-<sub>🟩 escrito por mí · 🟨 aportes puntuales · ⬜ del resto del equipo</sub>
-
 Fui responsable del **microservicio de recetas** (`recipe-ms`): API en FastAPI con GraphQL sobre MongoDB, validación de JWT, y los endpoints
 de recetas, comentarios y likes. Escribí también el **servicio de caché** sobre Redis
 (`recipy-cache`, 82 de 82 líneas) y lo integré con `recipe-ms`.
@@ -158,11 +153,11 @@ gateway en NestJS, el `docker-compose` y los scripts de inicialización de Mongo
 
 **[devops-reto-automatizacion-entorno](https://github.com/GorenNM/devops-reto-automatizacion-entorno)** — repo propio. Una app Node.js contenerizada, un módulo de Terraform que construye y publica la imagen, y un script de gestión del entorno Docker. Infraestructura como código escrita de punta a punta por mí. · `Terraform` `Docker` `Node.js` `Bash`
 
-**[gopdfsuit-qua](https://github.com/TeamC-swarchqua/gopdfsuit-qua)** — ⚠️ **es un fork** de [GoPdfSuit](https://github.com/chinmay-sawant/gopdfsuit) (MIT); Mi aporte encima: la suite de pruebas de integración y end-to-end (Playwright en el frontend, pruebas en Go en el backend), el reemplazo de Google OAuth por un servicio de autenticación propio en el middleware, y el análisis de seguridad y mantenibilidad — ZAP, Trivy, gosec, golangci-lint y modelo de amenazas. · `Go` `Playwright` `Vitest` `SAST/DAST`
+**[gopdfsuit-qua](https://github.com/TeamC-swarchqua/gopdfsuit-qua)** — **es un fork** de [GoPdfSuit](https://github.com/chinmay-sawant/gopdfsuit) (MIT); Mi aporte encima: la suite de pruebas de integración y end-to-end (Playwright en el frontend, pruebas en Go en el backend), el reemplazo de Google OAuth por un servicio de autenticación propio en el middleware, y el análisis de seguridad y mantenibilidad — ZAP, Trivy, gosec, golangci-lint y modelo de amenazas. · `Go` `Playwright` `Vitest` `SAST/DAST`
 
 ---
 
-## 🧰 Con lo que trabajo
+##  Con lo que trabajo
 
 |  |  |
 |---|---|
@@ -175,6 +170,6 @@ gateway en NestJS, el `docker-compose` y los scripts de inicialización de Mongo
 
 ---
 
-## 📬 Hablemos
+## Hablemos
 
 **femurcia6@gmail.com** · **[linkedin.com/in/fabio-murcia](https://linkedin.com/in/fabio-murcia)**
