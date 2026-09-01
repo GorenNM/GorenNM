@@ -8,7 +8,7 @@ que no se ve: la cola que no pierde mensajes, la transacción que no se corrompe
 dos usuarios tocan la misma cuenta al mismo tiempo, el `terraform apply` que levanta
 todo desde cero.
 
-> ** Mi código vive en las organizaciones de los
+> Mi código vive en las organizaciones de los
 > equipos con los que trabajo:
 >
 > 🍳 **[recipy-swarch](https://github.com/recipy-swarch)** · 🥥 **[TeamC-swarchqua](https://github.com/TeamC-swarchqua)**
@@ -48,7 +48,7 @@ flowchart LR
 
 **Lo que he trabajado:**
 
-| Componente | Qué hace | Mío |
+| Componente | Qué hace |
 |---|---|---|
 | `cococash-wallet-ms` | Cuentas, transferencias y depósitos sobre PostgreSQL  |
 | `cococash-transaction-ms` | Consume eventos y construye el libro mayor en DynamoDB |
